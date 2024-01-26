@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head> 
+    <meta charset="UTF-8" />
+    <title>
+      Crazy Eights
+    </title> 
+    <link rel="stylesheet" type="text/css" href="Crazy8.css" />
+  </head> 
+  <body>
+    <!-- Computer's hand -->
+    <div id="myHand" class="hand"></div>
+
+    <!-- "table" is div holding deck and discard pile images.
+         Initially show card back for pile (replaced by program). -->
+    <div id="table"><img id="deck"
+      src="images/PlayingCards/back.png" 
+      alt="Deck: click to pick a card."
+      class="card clickable"
+      /><img id="pile"
+      src="images/PlayingCards/back.png" 
+      alt="Discard pile top."
+      class="card"
+      /></div>
+
+    <!-- User's hand -->
+    <div id="yourHand" class="hand"></div>
+
+    <!-- 
+	 The suit-picker popup displayed when the user plays an 8.
+         Initially not visible.
+      -->
+    <div id="suitPicker">
+      Pick a suit:
+      <div id="suitImages">
+	<span id="c" class="clickable">&clubs;</span>
+	<span id="d" class="clickable">&diams;</span>
+	<span id="h" class="clickable">&hearts;</span>
+	<span id="s" class="clickable">&spades;</span>
+      </div>
+    </div>
+
+    <!-- Div for announcing the winner. Initially not visible. -->
+    <div id="announcer"></div>
+
+    <!-- Load the model classes. -->
+    <script src="model/Card.js"></script>
+    <script src="model/Deck.js"></script>
+    <script src="model/Pile.js"></script>
+    <script src="model/Player.js"></script>
+
+    <!-- Load the view class. -->
+    <script src="view/View.js"></script>
+
+    <!-- Load the presenter classes. -->
+    <script src="presenter/ComputerPlayer.js"></script>
+    <script src="presenter/HumanPlayer.js"></script>
+    <script src="presenter/MessageFromClient.js"></script>
+    <script src="presenter/Presenter.js"></script>
+
+    <!-- Run the program. -->
+    <script src="Main.js"></script>
+  </body> 
+</html> 

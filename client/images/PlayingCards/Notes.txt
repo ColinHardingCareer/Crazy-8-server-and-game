@@ -1,0 +1,13 @@
+The PNG files in this directory represent playing cards.
+
+All images are 71(w)x96(h) pixels.
+
+back.png is a card back image.  All other images are card fronts.
+
+jokb.png and jokr.png are black and red jokers, respectively.
+
+For all other cards, the file name consists of the card number
+(2 through 10, (j)ack, (q)ueen, (k)ing, (a)ce) followed by the
+card suit ((c)lub, (d)iamond, (h)eart, (s)pade).
+
+

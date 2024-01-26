@@ -1,0 +1,32 @@
+div.hand {
+    position: relative;
+    height: 100px;
+}
+img.card {
+    width: 71px;
+    height: 96px;
+}
+img.positionable {
+    position: absolute;
+    top: 0;
+}
+.clickable {
+    cursor: pointer;
+}
+#suitPicker, #announcer {
+    display: none; /* Set display to 'block' to make div visible. */
+    position:absolute;
+    left:40px;
+    top:125px;
+    background-color:white;
+    border:1px solid black;
+    padding:5px;
+    z-index:200;
+}
+#suitImages {
+    font-size: x-large;
+}
+#d, #h {
+    color: red;
+}
+    
